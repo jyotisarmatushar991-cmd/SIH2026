@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill Bridge | Industry–Academia–Student Collaboration Portal</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top govt-style strip -->
+  <div class="top-strip">
+    <div class="container top-strip-inner">
+      <span>🇮🇳 An Initiative for Industry–Academia Collaboration</span>
+      <span class="top-links">
+        <a href="#" onclick="return false;">Skip to Main Content</a>
+        <a href="#" onclick="return false;">हिन्दी</a>
+        <a href="#" onclick="return false;">Screen Reader</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="emblem">SB</div>
+        <div class="brand-text">
+          <h1>SKILL BRIDGE</h1>
+          <p>Connecting AICTE-Approved Institutions, Industry &amp; Students</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#industry">Industry</a>
+        <a href="#colleges">Colleges</a>
+        <a href="#students">Students</a>
+        <a href="#skill-mapping">AI Skill Mapping</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="badge">Smart India Hackathon Project</span>
+        <h2>Bridging the gap between Classrooms and Industry</h2>
+        <p>A unified digital platform where AICTE-approved colleges, industry partners and students collaborate on live, real-world projects — powered by AI-driven skill mapping and a virtual assistant.</p>
+        <div class="hero-actions">
+          <a href="#skill-mapping" class="btn btn-primary">Try AI Skill Mapping</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card"><h3>1,200+</h3><p>AICTE Colleges Onboarded</p></div>
+        <div class="stat-card"><h3>350+</h3><p>Industry Partners</p></div>
+        <div class="stat-card"><h3>18,000+</h3><p>Students Registered</p></div>
+        <div class="stat-card"><h3>2,600+</h3><p>Live Projects Listed</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">About the Portal</h2>
+      <p class="section-lead">Skill Bridge is a three-way collaboration ecosystem designed to close the industry-readiness gap in technical education.</p>
+      <div class="grid-3">
+        <div class="info-card">
+          <h3>🏭 Industry</h3>
+          <p>Companies post live problem statements and internship opportunities, and directly access a pipeline of AICTE-verified, skill-mapped student talent.</p>
+        </div>
+        <div class="info-card">
+          <h3>🎓 Colleges (AICTE Approved)</h3>
+          <p>Institutions verify their AICTE approval status, list faculty mentors, and track student participation in industry-aligned projects.</p>
+        </div>
+        <div class="info-card">
+          <h3>🧑‍💻 Students</h3>
+          <p>Students get an AI-generated skill profile, personalized project recommendations, and a chatbot guide for the entire journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry -->
+  <section id="industry" class="section">
+    <div class="container">
+      <h2 class="section-title">For Industry Partners</h2>
+      <ul class="check-list">
+        <li>Post live/real-world problem statements directly to relevant departments.</li>
+        <li>Filter students by AI-mapped skill profile, not just resumes.</li>
+        <li>Track project progress with participating colleges in real time.</li>
+        <li>Verified access — only AICTE-approved institutions and enrolled students.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Colleges -->
+  <section id="colleges" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">For AICTE-Approved Institutions</h2>
+      <ul class="check-list">
+        <li>Register using your AICTE Permanent ID for instant verification.</li>
+        <li>Assign faculty coordinators to industry-linked live projects.</li>
+        <li>Monitor student participation and outcomes on a college dashboard.</li>
+        <li>Showcase institutional achievements and industry collaborations.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Students -->
+  <section id="students" class="section">
+    <div class="container">
+      <h2 class="section-title">For Students</h2>
+      <ul class="check-list">
+        <li>Get an AI-generated skill profile from your coursework and interests.</li>
+        <li>Discover live industry projects matched to your skill profile.</li>
+        <li>Chat with the AI assistant for guidance on applications and skills to build.</li>
+        <li>Build a verifiable project portfolio recognized by industry partners.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AI Skill Mapping Demo -->
+  <section id="skill-mapping" class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">AI Skill Mapping — Demo</h2>
+      <p class="section-lead">Select your interests and current skills below to see a sample AI-generated career/project match. (Demo logic — for illustration only.)</p>
+
+      <div class="skill-form-card">
+        <label for="skillInput">Enter your skills / interests (comma separated)</label>
+        <input type="text" id="skillInput" placeholder="e.g. python, data analysis, react, machine learning">
+        <button class="btn btn-primary" onclick="mapSkills()">Map My Skills</button>
+        <div id="skillResult" class="skill-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact / Support</h2>
+      <p>For queries regarding registration, AICTE verification, or partnerships, use the AI chatbot assistant (bottom-right corner) or write to <strong>support@posthumanz.in</strong>.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Skill Bridge — An Industry-Academia-Student Collaboration Initiative | Smart India Hackathon Project</p>
+      <p class="fine-print">This is a project/demo portal built for the Smart India Hackathon and is not an official Government of India website.</p>
+    </div>
+  </footer>
+
+  <!-- AI Chatbot Widget -->
+  <div id="chatToggle" class="chat-toggle" onclick="toggleChat()">💬</div>
+  <div id="chatWindow" class="chat-window hidden">
+    <div class="chat-header">
+      <span>Skill Bridge Assistant</span>
+      <span class="chat-close" onclick="toggleChat()">✕</span>
+    </div>
+    <div id="chatBody" class="chat-body">
+      <div class="chat-msg bot">Hello! I'm the Skill Bridge assistant. Ask me about registration, AICTE verification, or how skill mapping works.</div>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="Type your question..." onkeydown="if(event.key==='Enter') sendChat()">
+      <button onclick="sendChat()">Send</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

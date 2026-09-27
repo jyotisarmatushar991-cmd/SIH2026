@@ -1,0 +1,17 @@
+{
+  "name": "skill-bridge-portal",
+  "version": "1.0.0",
+  "description": "Industry-Academia-Student collaboration portal (Skill Bridge) - Smart India Hackathon project",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "dependencies": {
+    "and": "^0.0.3",
+    "npm": "^12.1.0",
+    "start": "^5.1.0"
+  }
+}
